@@ -12,7 +12,6 @@ const getAllProducts = async () => {
 };
 
 const getOneProduct = async (id) => {
-  //TO BE CONTINUED
   try {
     const response = await axios.post('http://localhost:3000/api/products', {
       id,

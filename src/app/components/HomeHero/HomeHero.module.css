@@ -1,0 +1,43 @@
+ .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 4em;
+    background-color: black;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .hero-text {
+    max-width: 50%;
+    text-align: left;
+  }
+  
+  .hero-text h1 {
+    font-size: 4em;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+  
+  .hero-text p {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .hero-text button {
+    margin: 1em 0 1em 0;
+    background-color: var(--blue-color);
+    padding: 0.75em 3em;
+  }
+  
+  .hero-image {
+    position: relative;
+  }
+  
+  .img {
+    max-height: 90vh;
+    object-fit: cover;
+  }
+   

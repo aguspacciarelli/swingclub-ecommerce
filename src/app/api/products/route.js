@@ -9,7 +9,7 @@ export async function GET() {
   }
 }
 
-export async function POST() { //TO BE CONTINUED...
+export async function POST() {
   try {
     return NextResponse.json({ message: 'Ok', products });
   } catch (error) {
