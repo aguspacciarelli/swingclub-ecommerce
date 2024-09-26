@@ -22,7 +22,7 @@ export const AppContextProvider = ({ children }) => {
       existingProduct.quantity += quantity; // Si lo está, se le suma quantity en cantidad de products en el cart
       return setCart([...cart]); // Devuelve el mismo cart sin sumar otro mismo producto, solo la cantidad
     } else {
-      setCart([...cart, product]); // Si no es el mmismo product, agrega al cart el nuevo producto y +1 a quantity
+      setCart([...cart, product]); // Si no es el mismo product, agrega al cart el nuevo producto y +1 a quantity
     }
   };
 

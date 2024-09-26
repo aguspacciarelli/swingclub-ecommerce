@@ -15,29 +15,28 @@ export default function Navbar() {
       <nav>
         <ul className='flex justify-center items-center gap-5'>
           <li className={style["li"]}>
-            <Link href={`/`}>Productos</Link>
+            <Link href={`/checkout`}>Productos</Link>
           </li>
           <li className={style["li"]}>
-            <Link href={`/`}>Géneros</Link>
+            <Link href={`/checkout`}>Géneros</Link>
           </li>
           <li className={style["li"]}>
-            <Link href={`/cart`}>Años</Link>
+            <Link href={`/checkout`}>Años</Link>
           </li>
           <li className={style["li"]}>
-            <Link href={`/cart`}>Formatos</Link>
+            <Link href={`/checkout`}>Formatos</Link>
           </li>
           <li className={style["li"]}>
-            <Link href={`/cart`}>Accesorios</Link>
+            <Link href={`/checkout`}>Accesorios</Link>
           </li>
           <li className={style["li"]}>
-            <Link href={`/cart`}>Artículos</Link>
+            <Link href={`/checkout`}>Artículos</Link>
           </li>
         </ul>
       </nav>
 
-      <Link href={`/cart`}>
+      <Link href={`/checkout`}>
         <div className='relative'>
-          {/* <FaCartShopping size={30} /> */}
           <Image
             src={`/swingclub-carrito.svg`}
             width={30}
