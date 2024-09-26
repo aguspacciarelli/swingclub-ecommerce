@@ -1,43 +1,49 @@
  .hero {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     padding: 0 4em;
     background-color: black;
-    position: relative;
     overflow-x: hidden;
   }
-  
-  .hero-text {
-    max-width: 50%;
-    text-align: left;
-  }
-  
-  .hero-text h1 {
-    font-size: 4em;
-    line-height: 1.2;
-    font-weight: bold;
-  }
-  
-  .hero-text p {
-    margin-top: 20px;
-    font-size: 1rem;
-    line-height: 1.5;
+
+  .divimg {
+    width: 40%;
+    height: 90vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
   }
 
-  .hero-text button {
+  .img {
+    width: auto;
+    height: 85vh;
+  }
+  
+  .textos {
+    width: 70%;
+  }
+  
+  .hero h1 {
+    font-family: var(--pilsner-font);
+    font-size: 5em;
+    line-height: 1.25em;
+    font-weight: bold;
+    width: 80%;
+  }
+  
+  .hero p {
+    font-family: var(--mundial-font);
+    line-height: 1.75em;
+    font-size: 1.25em;
+    margin: 3em 0 1.5em 0;
+    width: 80%;
+  }
+
+  .hero button {
+    font-family: var(--mundial-font);
     margin: 1em 0 1em 0;
-    background-color: var(--blue-color);
+    background-color: var(--pink-color);
     padding: 0.75em 3em;
   }
-  
-  .hero-image {
-    position: relative;
-  }
-  
-  .img {
-    max-height: 90vh;
-    object-fit: cover;
-  }
-   
