@@ -1,4 +1,5 @@
 import styles from '@/app/components/Cart/Cart.module.css'
+import { Formik, Field, Form } from 'formik';
 
 const FormCheckout = () => {
   return (
@@ -91,7 +92,7 @@ const FormCheckout = () => {
           </select>
         </div>
 
-        <button class='full-width' type='submit'>
+        <button type='submit'>
           Comprar
         </button>
       </form>

@@ -80,3 +80,10 @@
 .mitad {
     width: 40%;
 }
+
+.form button {
+    background-color: var(--pink-color);
+    font-family: var(--mundial-font);
+    padding: 0.25em 2.5em;
+    margin: 1em 0;
+}
