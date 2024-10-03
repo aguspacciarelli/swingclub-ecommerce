@@ -7,7 +7,6 @@ export default async function ProductsGrid() {
   const response = await getAllProductsDB()
   return (
     <section className={styles["section"]}>
-     <Inner>
         <h2 className={styles["h2"]}>Productos seleccionados</h2>
         <p>Conocé y aprovechá las ofertas de nuestros productos seleccionados especialmente para vos</p>
         <div className={styles["div"]}>
@@ -15,7 +14,6 @@ export default async function ProductsGrid() {
             <ProductCard key={index} item={item} />
           ))}
         </div>
-      </Inner>
     </section>
   );
 }

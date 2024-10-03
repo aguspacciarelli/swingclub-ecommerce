@@ -7,12 +7,12 @@ const ProductCard = ({ item }) => {
     <section className={styles["section"]}>
     <div className={styles["div"]}>
  <Image
-        src={`/imgs/${item.image}`}
+        src={`${item.image}`}
         alt={item.name}
         width={0}
         height={0}
         sizes='100vw'
-        style={{ width: '80%', height: 'auto' }}
+        style={{ width: '70%', height: 'auto' }}
       />
       <h3 className={styles["h3"]}>{item.name}</h3>
       <p className={styles["p"]}>{item.artist}</p>

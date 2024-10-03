@@ -2,7 +2,6 @@
 import { useAppContext } from "@/app/contexts/AppContext";
 import Link from "next/link";
 import Image from "next/image";
-import { FaCartShopping } from "react-icons/fa6";
 import style from "@/app/components/Navbar/Navbar.module.css";
 
 export default function Navbar() {
@@ -18,19 +17,16 @@ export default function Navbar() {
             <Link href={`/checkout`}>Productos</Link>
           </li>
           <li className={style["li"]}>
-            <Link href={`/checkout`}>Géneros</Link>
-          </li>
-          <li className={style["li"]}>
-            <Link href={`/checkout`}>Años</Link>
-          </li>
-          <li className={style["li"]}>
             <Link href={`/checkout`}>Formatos</Link>
           </li>
           <li className={style["li"]}>
             <Link href={`/checkout`}>Accesorios</Link>
           </li>
           <li className={style["li"]}>
-            <Link href={`/checkout`}>Artículos</Link>
+            <Link href={`/checkout`}>Sobre nosotros</Link>
+          </li>
+          <li className={style["li"]}>
+            <Link href={`/checkout`}>Contacto</Link>
           </li>
         </ul>
       </nav>
@@ -50,12 +46,6 @@ export default function Navbar() {
             </span>
           )}
         </div>
-        {/* <Image
-          src={`/swingclub-usuario.svg`}
-          width={30}
-          height={30}
-          alt='User'
-        /> */}
       </Link>
     </div>
   );

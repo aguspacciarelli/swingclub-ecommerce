@@ -1,10 +1,9 @@
 import { getOneProductDB } from "@/app/actions";
-import ProductSingle from "@/app/components/ProductSingle";
+import ProductSingle from "@/app/components/ProductSingle/ProductSingle";
 
 const Product = async ({ params }) => {
   const { id } = params;
   const response = await getOneProductDB(id)
-  console.log(response)
   return <ProductSingle product={response.product} />;
 };
 
