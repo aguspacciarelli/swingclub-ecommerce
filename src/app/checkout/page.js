@@ -1,7 +1,6 @@
 import ProductsCheckout from "@/app/components/Cart/ProductsCheckout";
 import FormCheckout from "@/app/components/Cart/FormCheckout";
 import styles from "@/app/checkout/checkout.module.css";
-import Formm from "../components/Cart/form";
 
 const Cart = () => {
   return (
@@ -15,7 +14,6 @@ const Cart = () => {
           <div className='col-span-12 lg:col-span-4'>
             <ProductsCheckout />
           </div>
-          <Formm />
         </div>
       </div>
     </section>

@@ -26,3 +26,10 @@
     font-family: var(--mundial-font);
     width: 80%;
 }
+
+.div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+  margin-bottom: 2em;
+}

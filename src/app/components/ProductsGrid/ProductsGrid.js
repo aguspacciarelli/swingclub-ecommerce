@@ -5,12 +5,12 @@ import styles from "@/app/components/ProductsGrid/ProductsGrid.module.css";
 
 export default async function ProductsGrid() {
   const response = await getAllProductsDB()
-  console.log(response.products)
   return (
     <section className={styles["section"]}>
      <Inner>
         <h2 className={styles["h2"]}>Productos seleccionados</h2>
-        <div className='grid grid-cols-12'>
+        <p>Conocé y aprovechá las ofertas de nuestros productos seleccionados especialmente para vos</p>
+        <div className={styles["div"]}>
           {response.products && response.products.map((item, index) => (
             <ProductCard key={index} item={item} />
           ))}
