@@ -40,7 +40,7 @@ export default function Navbar() {
             alt='Cart'
           />
           {cartLength > 0 && (
-            <span className=' absolute top-5 left-5 flex items-center justify-center bg-black text-white rounded-full w-2 h-4 p-4 text-sm'>
+            <span className=' absolute top-5 left-5 flex items-center justify-center bg-blue-color text-white rounded-full w-2 h-4 p-4 text-sm'>
               {" "}
               {cartLength}
             </span>

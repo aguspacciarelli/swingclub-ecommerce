@@ -13,7 +13,8 @@ module.exports = {
         "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        "pink-color": "var(--pink-color)"
+        "pink-color": "var(--pink-color)",
+        "blue-color": "var(--blue-color)"
       },
       fontFamily: {
         "mundial": "var(--mundial-font)"

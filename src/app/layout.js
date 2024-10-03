@@ -1,11 +1,9 @@
-import { Inter } from 'next/font/google';
 import './globals.css';
 import Head from 'next/head';
 
 import { AppContextProvider } from '@/app/contexts/AppContext';
 import Navbar from '@/app/components/Navbar/Navbar';
-
-const inter = Inter({ subsets: ['latin'] });
+import Footer from '@/app/components/Footer/Footer';
 
 export const metadata = {
   title: 'Create Next App',
@@ -18,10 +16,11 @@ export default function RootLayout({ children }) {
       <Head>
       <link rel="stylesheet" href="https://use.typekit.net/vxz2phk.css"/>
       </Head>
-      <body className={inter.className}>
+      <body>
         <AppContextProvider>
           <Navbar />
           {children}
+          <Footer />
         </AppContextProvider>
       </body>
     </html>

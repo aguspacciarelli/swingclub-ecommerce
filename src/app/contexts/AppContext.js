@@ -26,9 +26,10 @@ export const AppContextProvider = ({ children }) => {
     }
   };
 
-  const handleRemoveProduct = (id) => {
-    //TODO
-  };
+  const handleRemoveProduct = (id) =>{
+    const restProducts = cart.filter (product => product.id !== id)
+    setCart(restProducts)
+  }
 
   const cartTotal = () =>
     cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
@@ -41,6 +42,7 @@ export const AppContextProvider = ({ children }) => {
         cartLength,
         handleAddToCart,
         cartTotal,
+        handleRemoveProduct
       }}
     >
       {children}

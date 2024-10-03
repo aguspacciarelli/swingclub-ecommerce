@@ -6,7 +6,7 @@ import Marker from '@/app/components/Marker/Marker';
 export default function Home() {
 
   return (
-    <div>
+    <div className='px-12'>
       <HomeHero />
       { <ProductsGrid /> }
       {<Marker />}
