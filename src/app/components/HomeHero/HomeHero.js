@@ -12,7 +12,7 @@ const HomeHero = () => {
         un viaje sonoro único. ¡Explorá nuestra colección y reviví la magia de
         la música en formato físico!
       </p>
-      <button>Boton con algo</button>
+      <button>Comprá ya</button>
       </div>
       <div className={styles["divimg"]}>
         <Image

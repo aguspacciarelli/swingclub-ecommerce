@@ -7,14 +7,12 @@ const Cart = () => {
     <section className={styles["checkout-section"]}>
       <h1>Checkout</h1>
       <div className={styles["inner"]}>
-        <div className='grid grid-cols-12'>
-          <div className='col-span-12 lg:col-span-7'>
+          <div>
             <FormCheckout />
           </div>
-          <div className='col-span-12 lg:col-span-4'>
+          <div>
             <ProductsCheckout />
           </div>
-        </div>
       </div>
     </section>
   );

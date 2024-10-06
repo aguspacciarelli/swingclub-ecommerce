@@ -8,12 +8,16 @@
     font-family: var(--pilsner-font);
     font-size: 2.5em;
     color: var(--yellow-color);
-    margin: 0.25em 0 0 1em;
+    margin: 0.25em 0 0 2.5em;
 }
 
 .inner {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    margin: 0 6em;
+}
+
+.inner div {
+    width: 100%;
 }
