@@ -18,3 +18,7 @@
     color: var(--blue-color);
     transition: ease 0.2s;
 }
+
+.iconos {
+    height: auto !important;
+}

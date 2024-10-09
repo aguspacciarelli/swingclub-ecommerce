@@ -25,3 +25,7 @@
 .redes li {
     margin: 1em;
 }
+
+.icono {
+    height: auto !important;
+}
