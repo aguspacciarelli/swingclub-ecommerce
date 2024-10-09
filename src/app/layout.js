@@ -1,6 +1,4 @@
 import './globals.css';
-import Head from 'next/head';
-
 import { AppContextProvider } from '@/app/contexts/AppContext';
 import Navbar from '@/app/components/Navbar/Navbar';
 import Footer from '@/app/components/Footer/Footer';
@@ -13,9 +11,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <Head>
-      <link rel="stylesheet" href="https://use.typekit.net/vxz2phk.css"/>
-      </Head>
       <body>
         <AppContextProvider>
           <Navbar />
