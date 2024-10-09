@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <div className={style["div"]}>
       <Link href={`/`}>
-        {/* <Image src={`/logo.svg`} width={70} height={70} alt='Logo' className={style["iconos"]}/> */}
+     {/* <Image src={`/logo.svg`} width={70} height={70} alt='Logo' className={style["iconos"]}/> */}
       </Link>
       <nav>
         <ul className='flex justify-center items-center gap-5'>
@@ -33,7 +33,7 @@ export default function Navbar() {
 
       <Link href={`/checkout`}>
         <div className='relative'>
-          {/* <Image
+         {/* <Image
             src={`/swingclub-carrito.svg`}
             width={30}
             height={30}

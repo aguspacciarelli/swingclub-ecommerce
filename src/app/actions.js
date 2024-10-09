@@ -23,7 +23,7 @@ const getOneProduct = async (id) => {
   }
 };
 
-export async function getAllProductsDB() {
+const  getAllProductsDB = async () => {
   await dbConnect();
   try {
     const products = await Product.find().sort({ name: "asc" });
@@ -35,7 +35,7 @@ export async function getAllProductsDB() {
   }
 }
 
-export async function getOneProductDB(id) {
+const getOneProductDB = async (id) => {
   await dbConnect();
   try {
     const product = await Product.findById(id)
@@ -46,4 +46,4 @@ export async function getOneProductDB(id) {
   }
 }
 
-export { getAllProducts, getOneProduct };
+export { getAllProducts, getOneProduct, getAllProductsDB, getOneProductDB };
