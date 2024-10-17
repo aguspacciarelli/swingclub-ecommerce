@@ -5,7 +5,6 @@ import dbConnect from '@/app/database/dbConnect'
 const getAllProducts = async () => {
   try {
     const response = await axios.get('http://localhost:3000/api/products');
-    console.log("hola mundo3",response)
     return response.data.products;
   } catch (error) {
     console.log(error);
@@ -27,7 +26,6 @@ const  getAllProductsDB = async () => {
   await dbConnect();
   try {
     const products = await Product.find().sort({ name: "asc" });
-    // console.log('return', { products: JSON.parse(JSON.stringify(products)) })
     return { products: JSON.parse(JSON.stringify(products)) };
   } catch (error) {
     console.log("Error: ", error.message);

@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <div className={style["div"]}>
       <Link href={`/`}>
-     {/* <Image src={`/logo.svg`} width={70} height={70} alt='Logo' className={style["iconos"]}/> */}
+    <Image src={`/logo.svg`} width={70} height={70} alt='Logo' className={style["iconos"]}/>
       </Link>
       <nav>
         <ul className='flex justify-center items-center gap-5'>
@@ -33,12 +33,12 @@ export default function Navbar() {
 
       <Link href={`/checkout`}>
         <div className='relative'>
-         {/* <Image
+        <Image
             src={`/swingclub-carrito.svg`}
             width={30}
             height={30}
             alt='Cart'
-            className={style["iconos"]}/> */}
+            className={style["iconos"]}/>
           {cartLength > 0 && (
             <span className=' absolute top-5 left-5 flex items-center justify-center bg-blue-color text-white rounded-full w-2 h-4 p-4 text-sm'>
               {" "}

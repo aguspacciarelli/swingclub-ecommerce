@@ -1,6 +1,5 @@
-import Inner from "@/app/components/Inner";
 import ProductCard from "@/app/components/ProductCard/ProductCard";
-import { getAllProducts, getAllProductsDB } from "@/app/actions";
+import { getAllProductsDB } from "@/app/actions";
 import styles from "@/app/components/ProductsGrid/ProductsGrid.module.css";
 
 export default async function ProductsGrid() {
