@@ -2,26 +2,6 @@ import axios from 'axios';
 import Product from "@/app/models/Product";
 import dbConnect from '@/app/database/dbConnect'
 
-const getAllProducts = async () => {
-  try {
-    const response = await axios.get('http://localhost:3000/api/products');
-    return response.data.products;
-  } catch (error) {
-    console.log(error);
-  }
-};
-
-const getOneProduct = async (id) => {
-  try {
-    const response = await axios.post('http://localhost:3000/api/products', {
-      id,
-    });
-    return response.data.products;
-  } catch (error) {
-    console.log(error);
-  }
-};
-
 const  getAllProductsDB = async () => {
   await dbConnect();
   try {
@@ -44,4 +24,15 @@ const getOneProductDB = async (id) => {
   }
 }
 
-export { getAllProducts, getOneProduct, getAllProductsDB, getOneProductDB };
+const  getAllSongsDB = async () => {
+  await dbConnect();
+  try {
+    const songs = await Songs.find().sort({ name: "asc" });
+    return { songs: JSON.parse(JSON.stringify(songs)) };
+  } catch (error) {
+    console.log("Error: ", error.message);
+    return { songs: [], category: null };
+  }
+}
+
+export {  getAllProductsDB, getOneProductDB, getAllSongsDB };

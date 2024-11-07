@@ -17,10 +17,7 @@ export default function Navbar() {
             <Link href={`/checkout`}>Productos</Link>
           </li>
           <li className={style["li"]}>
-            <Link href={`/checkout`}>Formatos</Link>
-          </li>
-          <li className={style["li"]}>
-            <Link href={`/checkout`}>Accesorios</Link>
+            <Link href={`/matriz`}>Descubrí</Link>
           </li>
           <li className={style["li"]}>
             <Link href={`/checkout`}>Sobre nosotros</Link>
