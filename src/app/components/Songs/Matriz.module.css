@@ -1,23 +1,76 @@
 .matriz-general {
-    padding: 1.25em;
+  padding: 1.25em;
 }
 
 .titulo {
-    color: var(--yellow-color);
-    font-family: var(--pilsner-font);
-    font-size: 2em;
-    margin-left: 2.5em;
+  color: var(--yellow-color);
+  font-family: var(--pilsner-font);
+  font-size: 2em;
+  margin-left: 2.5em;
+}
+
+.descripcion {
+  font-family: var(--montserrat-font);
+  width: 35%;
+  padding-left: 5em;
+  line-height: 2em;
 }
 
 .ejes {
-    position: relative;
-    width: 35%;
-    padding-bottom: 35%;
-    left: 30em;
-    margin-top: 5em;
-    margin-bottom: 10em;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.triste {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feliz {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.calmo {
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.efusivo {
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vacio {
+  margin-left: 5em;
+  margin-top: 1em;
+  font-weight: bold;
 }
 
 .cancion {
-    margin-left: 5em;
+  margin-top: 1em;
+  margin-left: 5em;
+  border: 1px solid white;
+  width: 30%;
+  padding: 1em;
+}
+
+.cancion h4 {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.artista,
+.album {
+  font-weight: lighter;
 }

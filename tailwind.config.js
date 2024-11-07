@@ -17,7 +17,7 @@ module.exports = {
         "blue-color": "var(--blue-color)"
       },
       fontFamily: {
-        "mundial": "var(--mundial-font)"
+        "montserrat": "var(--montserrat-font)"
       }
     },
   },

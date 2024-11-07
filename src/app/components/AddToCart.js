@@ -7,7 +7,7 @@ const AddToCart = ({ name, price, id, image }) => {
 
   return (
     <>
-      <button onClick={() => handleAddToCart(name, price, image, id, 1)} className='bg-pink-color font-mundial px-12 flex column items-center justify-center'>
+      <button onClick={() => handleAddToCart(name, price, image, id, 1)} className='bg-pink-color font-montserrat px-12 flex column items-center justify-center'>
       <Image
             src={`/carrito-blanco.svg`}
             width={17}

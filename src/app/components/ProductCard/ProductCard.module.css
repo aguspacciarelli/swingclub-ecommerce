@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: var(--mundial-font);
+    font-family: var(--montserrat-font);
     margin-bottom: 1em;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .button {
-    font-family: var(--mundial-font);
+    font-family: var(--montserrat-font);
     font-size: 0.85em;
     background-color: var(--pink-color);
     padding: 0.25em 1.5em;
