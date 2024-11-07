@@ -5,6 +5,6 @@ const songsSchema = new Schema({
   album: { type: String, required: true },
 });
 
-const Songs = mongoose.models.Songs || mongoose.model("Songs", productSchema);
+const Songs = mongoose.models.Songs || mongoose.model("Songs", songsSchema);
 
 export default Songs;
