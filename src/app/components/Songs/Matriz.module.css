@@ -74,3 +74,15 @@
 .album {
   font-weight: lighter;
 }
+
+.ejes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.puntos {
+  border: 1px white solid;
+  height: 3em;
+  width: 3em;
+}
