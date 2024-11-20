@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const Grid = (songs) => {
+const Grid = ({songs}) => {
   const [f, setF] = useState(4);
   const [t, setT] = useState(1);
   const [c, setC] = useState(4);
