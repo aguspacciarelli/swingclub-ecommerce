@@ -7,10 +7,6 @@ const SelectedSong = ({selectedSong}) => {
             <p>Título: {selectedSong.title}</p>
             <p>Artista: {selectedSong.artist}</p>
             <p>Álbum: {selectedSong.album}</p>
-            <p>Feliz: {selectedSong.f}</p>
-            <p>Triste: {selectedSong.t}</p>
-            <p>Calmo: {selectedSong.c}</p>
-            <p>Efusivo: {selectedSong.e}</p>
     </div>
   )
 }
