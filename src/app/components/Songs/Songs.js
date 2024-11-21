@@ -12,7 +12,7 @@ export default function Songs({ songs }) {
   const [songsGrid, setSongsGrid] = useState(
     Array(8)
       .fill(null)
-      .map(() => Array(8).fill(null)) // Matriz 8x8 inicializada con valores nulos que luego se llenará con las canciones
+      .map(() => Array(8).fill(null))
   );
 
   //Contadores de 1 a 8
@@ -31,6 +31,7 @@ export default function Songs({ songs }) {
       setContadorX((prevX) => prevX + 1);
     }
   }, [contadorX, contadorY]);
+
 
   const counterMap = useCallback( //Evita recreaciones innecesarias, memoriza una funcion que se recrea solo cuando la dependencia songs cambia
     (x, y) => {
@@ -66,7 +67,7 @@ export default function Songs({ songs }) {
     <div className={styles["container"]}>
       <div>
         <h2 className={styles["titulo"]}>Canción para vos</h2>
-        <section className="flex">
+        <section className={styles["matriz"]}>
           {isFinished &&
             songsGrid.map((row, rowIndex) => (
               <div key={`row-${rowIndex}`} className={styles["row"]}>

@@ -73,8 +73,18 @@
   align-items: center;
 }
 
+.matriz {
+  display: flex;
+justify-content: center;
+margin: 3em 0;
+}
+
 .puntos {
   border: 1px white solid;
   height: 3em;
   width: 3em;
+}
+
+.puntos:hover {
+  background-color: var(--blue-color);
 }
