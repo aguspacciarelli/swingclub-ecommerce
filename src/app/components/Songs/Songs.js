@@ -64,9 +64,8 @@ export default function Songs({ songs }) {
   }, [contadorX, contadorY, isFinished, updateCounters, counterMap]);
 
   return (
-    <div className={styles["container"]}>
-      <div>
-        <h2 className={styles["titulo"]}>Canción para vos</h2>
+    <div>
+      <div className={styles["container"]}>
         <section className={styles["matriz"]}>
           {isFinished &&
             songsGrid.map((row, rowIndex) => (
@@ -83,6 +82,7 @@ export default function Songs({ songs }) {
               </div>
             ))}
         </section>
+        <h2 className={styles["titulo"]}>Canción para vos</h2>
         {selectedSong ? (
           <SelectedSong selectedSong={selectedSong} />
         ) : (
